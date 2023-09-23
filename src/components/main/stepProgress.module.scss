@@ -1,0 +1,56 @@
+@import "../../styles/base.scss";
+
+h2.register_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.progress_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.progress_group {
+  display: flex;
+}
+
+.progress_label {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.progress_icon {
+  display: inline-block;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: var(--pg-addr-bg-color);
+  border-color: var(--pg-addr-bg-color);
+  border: 1px solid var(--progress-current-color);
+}
+
+.progress_bar {
+  display: flex;
+  flex-grow: 1;
+  max-width: 60px;
+  margin: 0px 8px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+span.text {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: var(--pg-addr-color);
+}
