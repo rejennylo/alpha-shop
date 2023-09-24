@@ -39,7 +39,7 @@ const genders = [
   { value: 'mx', sex: '不明'},
 ]
 
-function InputGroup({label, children}) {
+export function InputGroup({label, children}) {
   return (
     <div className={styles.input_group}>
       <div className={styles.input_label}>{label}</div>
@@ -54,40 +54,34 @@ export default function StepOne() {
         <h3 className={styles.form_title}>寄送地址</h3>
         <section className={styles.form_body}>
           <div className={styles.col}>
-            <InputGroup
-            label='性別'>
+            <InputGroup label='性別'>
               <div className={styles.select_container}>
                 <select defaultValue="mr">
                   {genders.map(gender => <option value={gender.value}>{gender.sex}</option>)}
                 </select>
               </div>
             </InputGroup>
-            <InputGroup
-            label='姓名'>
+            <InputGroup label='姓名'>
               <input className={styles.input_info} type="text" placeholder="請輸入姓名" />
             </InputGroup>
           </div>
           <div className={styles.col}>
-            <InputGroup
-            label='電話'>
+            <InputGroup label='電話'>
               <input className={styles.input_info} type="tel" placeholder="請輸入行動電話" />
             </InputGroup>
-            <InputGroup
-            label='Email'>
+            <InputGroup label='Email'>
               <input className={styles.input_info} type="email" placeholder="請輸入電子郵件" />
             </InputGroup>
           </div>
           <div className={styles.col}>
-            <InputGroup 
-            label='縣市'>
+            <InputGroup label='縣市'>
               <div className={styles.select_container}>
                 <select required>
                   {cities.map(city => <option key={city.id} value={city.id}>{city.name}</option>)}
                 </select>
               </div>
             </InputGroup>
-            <InputGroup 
-            label='地址'>
+            <InputGroup label='地址'>
               <input className={styles.input_info} type="email" placeholder="請輸入地址" />
             </InputGroup>
           </div>

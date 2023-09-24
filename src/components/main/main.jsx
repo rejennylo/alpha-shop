@@ -1,22 +1,22 @@
 import StepProgress from './stepProgress';
 import StepOne from './stepOne';
 import StepTwo from './stepTwo';
+import StepThree from './stepThree';
 import ProgressControl from './progressControl';
 import styles from './main.module.scss';
 
 
 function Register() {
   return (
-    <>
       <section className={styles.register_container}>
         <StepProgress />
         <section className={styles.form_container}>
           <StepOne />
           {/* <StepTwo /> */}
+          {/* <StepThree /> */}
         </section>
         <ProgressControl />
       </section>
-    </>
   )
 }
 

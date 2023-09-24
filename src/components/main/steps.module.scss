@@ -22,6 +22,7 @@ h3.form_title {
 }
 
 .input_group {
+  max-width: 60%;
   flex-grow: 1;
   margin-top: 24px;
 }
@@ -49,6 +50,7 @@ h3.form_title {
 }
 
 .radio_group {
+  max-width: 60%;
   position: relative;
   display: flex;
   justify-content: unset;
